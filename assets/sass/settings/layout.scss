@@ -28,7 +28,13 @@ body{
 
 @media only screen and (max-width: 600px) {
     body {
-      padding:30px;
+      padding:16px;
+    }
+    .screenContainer{
+        padding-bottom: 170px;
+    }
+    .page .screenContainer{
+        padding-bottom: 0px;
     }
   }
 
