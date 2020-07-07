@@ -1,6 +1,21 @@
 
 .projectPost{
 
+    .back{
+        margin-top: 130px;
+        display: block;
+        font-weight: 400;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: black;
+        img{
+            width: 20px;
+            margin-right: 8px;
+        }
+    }
     .titleContainer{
         width: 100%;
         p{
@@ -18,7 +33,6 @@
         font-size: 40px;
         font-weight: 700;
         width: 100%;
-        margin-top: 160px;
         margin-bottom: 30px;
     }
     .imageContainer{

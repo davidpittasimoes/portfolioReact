@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { workItems } from '../../utils/works'
+import Link from 'next/link'
 import Post from '../../components/layout/post/Post'
 import './style.scss';
 
@@ -37,6 +38,12 @@ const Project = () => {
         work.title == id && 
         <div>
             <div className="container titleContainer">
+              <Link href="/">
+                <a className="back">
+                  <img src="https://img.icons8.com/material-sharp/48/000000/left.png"/>
+                   Home
+                </a>
+              </Link>
               <h2>{work.title}</h2>
               {work.text.map((paragraph) =>(
                 <p>{paragraph.p}</p>
