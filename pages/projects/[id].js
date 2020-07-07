@@ -28,7 +28,9 @@ const Project = () => {
       tech == 'gitLab' && techUsed.push('https://img.icons8.com/color/48/000000/gitlab.png');
       tech == 'github' && techUsed.push('https://img.icons8.com/fluent/48/000000/github.png');
       tech == 'visual studio' && techUsed.push('https://img.icons8.com/color/48/000000/visual-studio-code-2019.png');
-      tech == 'xcode' && techUsed.push('https://img.icons8.com/color/48/000000/xcode.png')
+      tech == 'xcode' && techUsed.push('https://img.icons8.com/color/48/000000/xcode.png');
+      tech == 'nodejs' && techUsed.push("https://img.icons8.com/color/48/000000/nodejs.png");
+      tech == 'graphql' && techUsed.push("https://img.icons8.com/color/48/000000/graphql.png");
     })
   })
   return (
@@ -81,7 +83,7 @@ const Project = () => {
               <div className="graySection">
               <section className="container contribution">
                 <h3>My work</h3>
-                <p>Here are some screens of pages that I designed and developped from scratch.</p>
+                <p>Here are some screens of pages that I designed and developed from scratch.</p>
                 <div className="screensContainer">
                   {work.myWork.map((image) => (
                     <img src={image.img}/>
