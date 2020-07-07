@@ -1,0 +1,66 @@
+@import '../../../assets/sass/base.scss';
+
+
+.page{
+    .centeredPaper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .pageContent.about{
+        h2{
+            margin: 0;
+            line-height: 100px;
+            font-size: 32px;
+            font-weight: $bold;
+            &.secondaryHeader{
+                color: $secondaryHeader;
+                
+            }
+        }
+        p{
+            max-width: 520px;
+            padding: 24px 0; 
+        }
+        @media only screen and (max-width: 600px) {
+            p {
+              width:100%;
+            }
+          }
+        
+        .ctaContainer{
+            margin-top: 32px;
+        }
+        
+    }
+    .floatingItemContainer{
+        position: relative;
+        display: flex;
+        align-items: center;
+        figure{
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 500px;
+            text-align: center;
+            position: relative;
+            img{
+                width: 110%;
+            }
+        }
+        .line{
+            width: 9999px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            height: 2px;
+            background-color: #d4d4d4;
+            left: 330px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .floatingItemContainer {
+          display:none;
+        }
+      }
+}

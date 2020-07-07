@@ -1,0 +1,42 @@
+@import '../../../assets/sass/base.scss';
+
+.headerContainer{
+    
+        background: white;
+        z-index: 100;
+    flex-grow: 1;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logoTitle{
+        font-size: 19px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        font-family: $main-font;
+        font-weight: $semi-bold;
+        width: 70%
+    }
+    .navContainer{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span{
+            margin-left: 16px;
+        }
+    }
+    .navItem{
+        text-align: right;
+        &.btn{
+            font-size: 16px;
+            padding: 4px 16px;
+        }
+    }
+}

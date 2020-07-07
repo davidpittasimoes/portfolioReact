@@ -1,0 +1,106 @@
+
+.projectPost{
+
+    .titleContainer{
+        width: 100%;
+        p{
+            color: black;
+            position: relative;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 12px;
+          
+        }
+    }
+    h2{
+        color: Black;
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        width: 100%;
+        margin-top: 160px;
+        margin-bottom: 30px;
+    }
+    .imageContainer{
+        margin-top: 60px;
+        text-align: center;
+        img{
+            max-width: 500px;
+            width: 100%;
+        }
+        
+    }
+    .screensContainer{
+        position: relative;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        grid-auto-flow: dense;
+        grid-gap: 20px;
+        margin-top: 40px;
+        img{
+            width: 100%;
+            box-shadow: 20px 20px 60px #d2d2d2, -20px -20px 60px #ffffff;
+            border-radius: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            img {
+                grid-column: span 3;
+            }
+          }
+        
+        &.solutions{
+            padding-bottom: 60px;
+            img{
+                box-shadow: none;
+            }
+        }
+        &.oneImg{
+            display: flex;
+        }
+        &.twoImgs{
+            display: flex;
+        }
+        @media only screen and (max-width: 600px) {
+            &.twoImgs {
+                display:block;
+            }
+          }
+    }
+    .problem{
+        p{
+            margin-bottom: 16px;
+        }
+    }
+    section{
+        h3{
+            color: Black;
+            position: relative;
+            font-size: 32px;
+            font-weight: 700;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 30px;   
+        }
+        h4{
+            color: black;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    }
+    .graySection{
+        background-color: #f7f7f7;
+        padding: 40px;
+        h3{
+            margin-top: 0;
+        }
+    }
+    
+    .techUsed{
+        padding-bottom: 60px;
+        img{
+            margin-right: 16px;
+        }
+    }
+}
