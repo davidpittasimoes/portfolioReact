@@ -46,7 +46,14 @@ const Project = () => {
                    Home
                 </a>
               </Link>
+              {work.href ? 
+                  <a href={work.href} target="_blank" className="titleLink">
+                    <h2>{work.title}</h2>
+                    <img src="https://img.icons8.com/material/24/000000/external-link-squared.png"/>
+                  </a>
+              :
               <h2>{work.title}</h2>
+              }
               {work.text.map((paragraph) =>(
                 <p>{paragraph.p}</p>
               ))}

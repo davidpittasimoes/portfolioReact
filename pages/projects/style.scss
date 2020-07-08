@@ -119,3 +119,16 @@
         }
     }
 }
+
+.titleLink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h2{
+        width: auto;
+    }
+    img{
+        margin-bottom: 30px;
+        margin-left: 11px; 
+    }
+}

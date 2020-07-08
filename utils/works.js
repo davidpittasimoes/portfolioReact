@@ -2,6 +2,7 @@ export const workItems = [
     {
         type: 'big',
         title: 'Cegoc',
+        href: 'http://cegoc.pt',
         text:[
             {
                p: 'Cegoc was the first in-house job I had as a developer and it is still an active freelance customer of mine. '
@@ -35,6 +36,7 @@ export const workItems = [
 
     },
     {
+
         type: 'small',
         title: 'Allianz',
         text:[
@@ -72,6 +74,7 @@ export const workItems = [
 
     },
     {
+        href: 'https://enaviga.com',
         type: 'big',
         title: 'Enaviga',
         text:[
@@ -112,6 +115,7 @@ export const workItems = [
     },
     
     {
+        href: 'http://urbeazul.pt',
         type: 'small',
         title: 'Urbeazul',
         text:[
@@ -142,6 +146,7 @@ export const workItems = [
 
     },
     {
+        href:'https://www.mypatchandme.co.uk/landing-page',
         type: 'small',
         title: 'Neupro',
         text:[
